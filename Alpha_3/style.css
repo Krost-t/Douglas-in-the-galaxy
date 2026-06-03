@@ -1,0 +1,62 @@
+html, body {
+    overflow: hidden;            /* aucun défilement horizontal ni vertical */
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at 50% 0%, #1b1f4a 0%, #05060f 70%);
+    color: #e8e8ff;
+    font-family: 'Trebuchet MS', 'Arial', sans-serif;
+    height: 100vh;
+}
+
+header h1 {
+    text-align: center;
+    color: #6ad0ff;
+    font-family: 'Arial Black', Helvetica, sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px #2874A6, 0 0 4px #fff;
+    margin: 8px 0 6px;
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game {
+    border: 3px solid #2874A6;
+    border-radius: 6px;
+    box-shadow: 0 0 24px rgba(52, 152, 219, 0.6);
+    line-height: 0;
+}
+
+main { width: 100%; }
+
+#game { order: 1; }
+
+/* Le HUD ajouté par p5 (createDiv) */
+.hud {
+    order: 2;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    color: #cfe8ff;
+    margin: 6px auto 0;
+    letter-spacing: 0.5px;
+}
+
+.aide {
+    order: 3;
+    text-align: center;
+    max-width: 720px;
+    font-size: 0.78rem;
+    color: #b9c0ff;
+    line-height: 1.35;
+    margin: 6px auto 0;
+}
+
+.aide strong { color: #ffd24d; }
+.aide em { color: #6ad0ff; }
